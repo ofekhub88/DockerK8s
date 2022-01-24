@@ -17,17 +17,22 @@
 
 <p> Prepare the tag  </p>
 
-  sudo docker tag \<Local Full Image name> \<server>:\<port>/path/\<Image Name>:tag
+  sudo docker tag <Local Full Image name> <server>:\<port>/path/<Image Name>:tag
+  
   exmaple :
-  sudo docker tag dpage/pgadmin4:4.18  \<server>:\<port>
- then push 
-   sudo docker push  \<server>:\<port>/pgadmin/pgadmin4:4.18
+  
+  sudo docker tag dpage/pgadmin4:4.18 <server>:<port>
+  
+ then push : 
+ 
+   sudo docker push  <server>:<port>/pgadmin/pgadmin4:4.18
  
  
  
 ## configure the proxy 
  
- <p> docker pull postgres:latest
+    docker pull postgres:latest 
+    
  <p> reate a systemd drop-in directory for the docker service:
 
  <p> 
@@ -36,21 +41,29 @@
  <p>                              Failed  Build errors what error and frequency for each job ,later we can categorize which failed are related to the platform or anything else .
  <p> 
  <p> 
- <p> sudo mkdir -p /etc/systemd/system/docker.service.d
- <p> Create a file named /etc/systemd/system/docker.service.d/http-proxy.conf that adds the HTTP_PROXY environment variable:
+    sudo mkdir -p /etc/systemd/system/docker.service.d
+    
+  Create a file named /etc/systemd/system/docker.service.d/http-proxy.conf that adds the HTTP_PROXY environment variable:
+  
  <p> 
- <p> [Service]
- <p> Environment="HTTP_PROXY=http://proxy.example.com:80"
+ 
+    [Service]
+    Environment="HTTP_PROXY=http://proxy.example.com:80"
+    
  <p> If you are behind an HTTPS proxy server, set the HTTPS_PROXY environment variable:
  <p> 
- <p> [Service]
- <p> Environment="HTTPS_PROXY=https://proxy.example.com:443"
+ 
+    [Service]
+    Environment="HTTPS_PROXY=https://proxy.example.com:443"
+ 
  <p> Multiple environment variables can be set; to set both a non-HTTPS and a HTTPs proxy;
  <p> 
- <p> [Service]
- <p> Environment="HTTP_PROXY=http://proxy.example.com:80"
- <p> Environment="HTTPS_PROXY=https://proxy.example.com:443"
- <p> If you have internal Docker registries that you need to contact without proxying you can specify them via the NO_PROXY environment variable.
+ 
+   [Service]
+   Environment="HTTP_PROXY=http://proxy.example.com:80"
+   Environment="HTTPS_PROXY=https://proxy.example.com:443"
+   
+   If you have internal Docker registries that you need to contact without proxying you can specify them via the NO_PROXY environment variable.
  <p> 
  <p> The NO_PROXY variable specifies a string that contains comma-separated values for hosts that should be excluded from proxying. These are the options you can specify to exclude hosts:
  <p> 
@@ -71,8 +84,5 @@
  # insecure-registries  work wihth http 
  
    edit teh file /etc/docker/daemon.json
-   {
    
-    "insecure-registries" : [ "<Server Name>::<port> " , "Server Name: port " ,""Server Name: port "]
-    
-}
+   {  "insecure-registries" : [ "<Server Name>::<port> " , "<server>:<port>" ,"<server>:<port> "]  }
