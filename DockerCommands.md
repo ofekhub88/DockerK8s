@@ -18,6 +18,7 @@
  Prepare the tag  
   sudo docker tag \<Local Full Image name> \<server>:\<port>/path/\<Image Name>:tag
   exmaple :
+  <p>
   sudo docker tag dpage/pgadmin4:4.18  \<server>:\<port>
  then push 
    sudo docker push  \<server>:\<port>/pgadmin/pgadmin4:4.18
