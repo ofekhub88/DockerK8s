@@ -20,8 +20,8 @@
  <br> sudo docker push <server>:port/pgadmin/pgadmin4:4.18
  <br> 
  <br> 
- <br> 
-## configure the proxy 
+ 
+ ## configure the proxy 
  <br> 
  <br> docker pull postgres:latest
  <br> reate a systemd drop-in directory for the docker service:
