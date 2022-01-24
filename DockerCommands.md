@@ -13,7 +13,7 @@
  <br> 
  <br> docker login 
  <br> 
- <br> sudo docker login -u \<username\> -p \<Pass\> \<server\>:\<port\>
+ <br> sudo docker login -u \<username> -p \<Pass> \<server>:\<port>
  <br> 
  <br> P repare the tag 
   sudo docker tag \<Local Full Image name> <server>:port/path/<Image Name>:tag
