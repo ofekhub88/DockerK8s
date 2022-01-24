@@ -4,17 +4,17 @@
 
 
 # Clean unsed images
- <p> docker image prune -a
- <p> docker volume prune -f
- <p> docker system prune
+  docker image prune -a
+  docker volume prune -f
+  docker system prune
 
  
 # Push to nexus 
- <p> 
+  
  <p> docker login </p>
 
  sudo docker login -u <username> -p <Pass> <server>:<port>
- <p> 
+
  <p> Prepare the tag 
  <p> sudo docker tag \<Local Full Image name> <server>:port/path/<Image Name>:tag
  <p> exmaple :
