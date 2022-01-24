@@ -1,12 +1,13 @@
 # DockerK8s
 <br>
+
 # Clean unsed images
  <br> docker image prune -a
  <br> docker volume prune -f
  <br> docker system prune
 
  
-## Push to nexus 
+# Push to nexus 
  <br> 
  <br> docker login 
  <br> 
@@ -21,8 +22,8 @@
  <br> 
  <br> 
  
- ## configure the proxy 
- <br> 
+## configure the proxy 
+ 
  <br> docker pull postgres:latest
  <br> reate a systemd drop-in directory for the docker service:
  <br> 
@@ -63,8 +64,9 @@
  <br> Environment="HTTP_PROXY=http://proxy.example.com:80"
  <br> Environment="HTTPS_PROXY=https://proxy.example.com:443"
  <br> Environment="NO_PROXY=localhost,127.0.0.1,docker-registry.example.com,.corp"
- <br> 
- ## insecure-registries  work wihth http 
+ 
+ # insecure-registries  work wihth http 
+ 
  <br>  edit teh file /etc/docker/daemon.json
  <br>   {
     "insecure-registries" : [ "<Server>:<port>" , "<Server>:<port>" , "<Server>:<port>"]
