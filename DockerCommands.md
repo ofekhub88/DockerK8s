@@ -84,4 +84,4 @@
  
    edit teh file /etc/docker/daemon.json
    
-   {  "insecure-registries" : [ "<Server Name>::<port> " , "<server>:<port>" ,"<server>:<port> "]  }
+   {  "insecure-registries" : [ "\<Server Name>:\<port> " , "\<server>:\<port>" ,"\<server>:\<port> "]  }
