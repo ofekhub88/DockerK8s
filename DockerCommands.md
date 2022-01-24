@@ -69,5 +69,5 @@
  
  <br>  edit teh file /etc/docker/daemon.json
  <br>   {
-    "insecure-registries" : [ "<Server>:<port>" , "<Server>:<port>" , "<Server>:<port>"]
+    "insecure-registries" : [ ""Server Name: port " , "Server Name: port " ,""Server Name: port "]
 }
