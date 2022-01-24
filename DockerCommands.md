@@ -13,7 +13,7 @@
  <p> 
  <p> docker login 
  <p> 
- <p> sudo docker login -u /<username/> -p <Pass> \<server>:\<port>
+ sudo docker login -u <username> -p <Pass> <server>:<port>
  <p> 
  <p> Prepare the tag 
  <p> sudo docker tag \<Local Full Image name> <server>:port/path/<Image Name>:tag
