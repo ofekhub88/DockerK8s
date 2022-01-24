@@ -14,8 +14,7 @@
  <p> docker login </p>
 
  sudo docker login -u \<username> -p \<Pass> \<server>:\<port>
-
- Prepare the tag  
+<p> Prepare the tag  /p<>
   sudo docker tag \<Local Full Image name> \<server>:\<port>/path/\<Image Name>:tag
   exmaple :
   <p></p>
