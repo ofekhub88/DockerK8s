@@ -16,7 +16,7 @@
  <br> sudo docker login -u <username> -p <Pass> <server>:port
  <br> 
  <br> P repare the tag 
- <br> sudo docker tag \<Local Full Image name> <server>:port/path/<Image Name>:tag
+ <br> sudo docker tag \<Local Full Image name> \<server>:port/path/\<Image Name>:tag
  <br> exmaple :
  <br> sudo docker tag dpage/pgadmin4:4.18 <server>:port
  <br> then push 
