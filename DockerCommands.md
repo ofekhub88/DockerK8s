@@ -2,7 +2,6 @@
 <p>
 
 
-
 # Clean unsed images
   docker image prune -a
   docker volume prune -f
@@ -13,19 +12,19 @@
   
  <p> docker login </p>
 
- sudo docker login -u \<username> -p <Pass> <server>:<port>
+ sudo docker login -u \<username> -p \<Pass> \<server>:\<port>
 
 <p> Prepare the tag  </p>
- 
-  sudo docker tag <Local Full Image name> <server>:<port>/path/<Image Name>:tag
+
+  sudo docker tag \<Local Full Image name> \<server>:\<port>/path/\<Image Name>:tag
   
   exmaple :
   
-  sudo docker tag dpage/pgadmin4:4.18 <server>:<port>
+  sudo docker tag dpage/pgadmin4:4.18 \<server>:\<port>
   
  then push : 
  
-   sudo docker push  <server>:<port>/pgadmin/pgadmin4:4.18
+   sudo docker push  \<server>:\<port>/pgadmin/pgadmin4:4.18
  
  
  
