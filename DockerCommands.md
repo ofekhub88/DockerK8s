@@ -11,6 +11,7 @@
  
 # Push to nexus 
  <br> 
+  <br>   \< KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK >
  <br> docker login 
  <br> 
  <br> sudo docker login -u <username> -p <Pass> <server>:port
@@ -28,7 +29,7 @@
  
  <br> docker pull postgres:latest
  <br> reate a systemd drop-in directory for the docker service:
- <br>   < KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK >
+
  <br> 
  <br> in jenkins for example,  no  jobs that running in parallel at time  , duration of each job , active running jobs at time ( it will show the trend of the growing or trade of performance and respond time ,
  <br>                               Respond time of the jenkins page load .
