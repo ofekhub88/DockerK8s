@@ -11,8 +11,8 @@
  
 # Push to nexus 
  <p> 
- <p> docker login 
- <p> 
+ <p> docker login </p>
+
  sudo docker login -u <username> -p <Pass> <server>:<port>
  <p> 
  <p> Prepare the tag 
