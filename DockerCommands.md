@@ -15,7 +15,7 @@
 
  sudo docker login -u \<username> -p \<Pass> \<server>:\<port>
 
-<p> Prepare the tag  </p>
+ Prepare the tag  
   sudo docker tag \<Local Full Image name> \<server>:\<port>/path/\<Image Name>:tag
   exmaple :
   sudo docker tag dpage/pgadmin4:4.18  \<server>:\<port>
