@@ -1,14 +1,11 @@
 # DockerK8s
 
 # Clean unsed images
- # docker image prune -a
- # docker volume prune -f
- # docker system prune
+ <br> docker image prune -a
+ <br> docker volume prune -f
+ <br> docker system prune
 
-
-
-
- <br> Docker
+ 
  ## Push to nexus 
  <br> 
  <br> docker login 
