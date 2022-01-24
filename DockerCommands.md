@@ -11,7 +11,7 @@
  
 # Push to nexus 
  <br> 
-  <br>   \< KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK >
+  <br>   \\< KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK >
  <br> docker login 
  <br> 
  <br> sudo docker login -u <username> -p <Pass> <server>:port
