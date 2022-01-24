@@ -6,7 +6,7 @@
  <br> docker system prune
 
  
- ## Push to nexus 
+## Push to nexus 
  <br> 
  <br> docker login 
  <br> 
@@ -21,7 +21,7 @@
  <br> 
  <br> 
  <br> 
- ## configure the proxy 
+## configure the proxy 
  <br> 
  <br> docker pull postgres:latest
  <br> reate a systemd drop-in directory for the docker service:
