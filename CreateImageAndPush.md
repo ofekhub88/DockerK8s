@@ -1,4 +1,5 @@
 # Dokerfile example
+**
 FROM jenkins/jenkins:2.263.3-jdk11
 
 USER root
@@ -11,7 +12,6 @@ USER jenkins
 
 
 ================================
-**
 docker build . \n
 docker images \n
 docker tag jenkins/jenkins  <NexusDockerImagePath:2.263.3-jdk11
