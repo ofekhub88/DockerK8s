@@ -11,9 +11,9 @@ USER jenkins
 
 
 ================================
-
-docker build .
-docker images
+<p>
+ docker build .
+ docker images
 docker tag jenkins/jenkins  <NexusDockerImagePath:2.263.3-jdk11
 docker push  <NexusDockerImagePath:2.263.3jdk11
   
