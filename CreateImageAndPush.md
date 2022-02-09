@@ -12,6 +12,7 @@ USER jenkins
 
 
 ================================
+
 docker build .
 
 docker images 
