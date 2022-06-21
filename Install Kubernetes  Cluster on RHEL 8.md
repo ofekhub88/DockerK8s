@@ -115,6 +115,18 @@ $systemctl status  cri-o
 
 
 
+
+$ mkdir -p /etc/systemd/system/kubelet.service.d/
+$ echo "[Service]" >> /etc/systemd/system/kubelet.service.d/proxy.conf
+$ echo "Environment=\"HTTP_PROXY=<Your proxy URL> \"" >> /etc/systemd/system/kubelet.service.d/proxy.conf
+$ echo "Environment=\"HTTPS_PROXY=<Your proxy URL>"" >> /etc/systemd/system/kubelet.service.d/proxy.conf
+$ echo "Environment=\"NO_PROXY=<Your Hosts name with comma sprated  \"" >> /etc/systemd/system/kubelet.service.d/proxy.conf
+
+$ systemctl daemon-reload
+$ systemctl restart kubelet
+
+```
+
 ```
 
 
