@@ -141,3 +141,19 @@ $ kubectl create -f https://docs.projectcalico.org/manifests/tigera-operator.yam
 $ kubectl create -f https://docs.projectcalico.org/manifests/custom-resources.yaml
 ```
 
+
+## Configure User Exp
+```bach
+
+$sudo kubectl completion bash >/etc/bash_completion.d/kubectl
+$sudo chmod 755 /etc/bash_completion.d/kubectl
+#For each user you that run teh kubectl you can add 
+$ echo 'alias k=kubectl' >>~/.bashrc
+$ echo 'complete -F __start_kubectl k' >>~/.bashrc
+```
+
+for any other user 
+```
+
+
+
