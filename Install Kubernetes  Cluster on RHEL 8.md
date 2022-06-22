@@ -152,7 +152,11 @@ $ echo 'alias k=kubectl' >>~/.bashrc
 $ echo 'complete -F __start_kubectl k' >>~/.bashrc
 ```
 
-for any other user 
+## Install teh dashbord 
+```bach
+
+instruction are in https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
 ```
 
 
