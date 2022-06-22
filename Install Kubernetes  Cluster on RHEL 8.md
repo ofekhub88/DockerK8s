@@ -159,5 +159,32 @@ instruction are in https://kubernetes.io/docs/tasks/access-application-cluster/w
 
 ```
 
+## Configure the Dashbord to run on node port 30444
+```yaml
+# Create Yaml file
+---
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    k8s-app: kubernetes-dashboard
+  name: kubernetes-dashboard
+  namespace: kubernetes-dashboard
+spec:
+  #ports:
+  #  - port: 443
+  #    targetPort: 8443
+  type: NodePort
+  ports:
+  - nodePort: 30444
+    port: 8888
+    protocol: TCP
+    targetPort: 8443
+  selector:
+    k8s-app: kubernetes-dashboard
+# Then run the yamnl file
+
+ $ kubectl apply -f dashsvc.yaml
+```
 
 
