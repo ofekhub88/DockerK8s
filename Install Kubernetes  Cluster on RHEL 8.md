@@ -186,7 +186,10 @@ spec:
 
  $ kubectl apply -f dashsvc.yaml
 ```
-
+### to let your master node to run pods of dashbord for exmaple run teh tain node command 
+```bach
+kubectl taint nodes --all node-role.kubernetes.io/<node name master for exmaple>-
+```
 ### to get the login dashbord toekn run teh command
 ```bach
 $ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}')
