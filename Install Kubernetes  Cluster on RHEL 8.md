@@ -187,4 +187,11 @@ spec:
  $ kubectl apply -f dashsvc.yaml
 ```
 
+### to get the login dashbord toekn run teh command
+```bach
+$ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}')
+#after dashbord is ready you can access it 
+#https://`hostname`:30444
+```
+
 
