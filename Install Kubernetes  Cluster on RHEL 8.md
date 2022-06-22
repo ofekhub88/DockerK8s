@@ -197,4 +197,7 @@ $ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashbo
 #https://`hostname`:30444
 ```
 
-
+### install metric server
+```bach
+ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+ ```
